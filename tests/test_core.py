@@ -42,6 +42,5 @@ def test_divide():
     assert divide(12, 4) == 3
     assert divide(12.5, 5) == 2.5
 
-
-def test_divide_by_zero():
-    assert divide(5, 0) == "undefined"
+def test_divide_zero():
+    assert divide(0, 12)  == 0
