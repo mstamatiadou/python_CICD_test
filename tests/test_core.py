@@ -37,3 +37,12 @@ def test_multiply_by_zero():
 ])
 def test_multiply_parametrized(a, b, expected):
     assert multiply(a, b) == expected
+
+def test_divide():
+    assert multiply(12, 4) == 3
+
+
+def test_divide_by_zero():
+    assert multiply(5, 0) == "undefined"
+
+def test_divide_zero():0
