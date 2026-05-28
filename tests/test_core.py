@@ -1,5 +1,5 @@
 import pytest
-from my_package.core import greet, add
+from my_package.core import greet, add, multiply
 
 def test_greet():
     assert greet("Marina") == "Hello, Marina!"
@@ -20,3 +20,20 @@ def test_add_negative():
 ])
 def test_add_parametrized(a, b, expected):
     assert add(a, b) == expected
+
+def test_multiply():
+    assert multiply(3, 4) == 12
+
+
+def test_multiply_by_zero():
+    assert multiply(5, 0) == 0
+
+
+@pytest.mark.parametrize("a, b, expected", [
+    (2, 3, 6),
+    (-2, 3, -6),
+    (-2, -3, 6),
+    (10, 10, 100),
+])
+def test_multiply_parametrized(a, b, expected):
+    assert multiply(a, b) == expected
