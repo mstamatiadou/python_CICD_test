@@ -11,6 +11,6 @@ def multiply(a: int, b: int) -> int:
     """Return the product of two integers."""
     return a * b
 
-def divide(a: int, b: int) -> float:
+def divide(a: float, b: float) -> float:
     """Return the product of two integers."""
     return a / b
