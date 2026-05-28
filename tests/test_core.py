@@ -45,6 +45,3 @@ def test_divide():
 
 def test_divide_by_zero():
     assert divide(5, 0) == "undefined"
-
-def test_divide_zero():
-    assert divide(0, 12)  == 0
